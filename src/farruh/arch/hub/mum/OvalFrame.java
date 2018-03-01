@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.beans.*;
 import java.awt.*;
 
-public class OvalFrame extends JFrame {
+public class OvalFrame extends JFrame implements Observer {
     private int count;
 
     public OvalFrame() {
@@ -16,6 +16,15 @@ public class OvalFrame extends JFrame {
         SymWindow aSymWindow = new SymWindow();
         this.addWindowListener(aSymWindow);
 
+    }
+
+    @Override
+    public void update(ISubject iSubject) {
+        if (iSubject instanceof Counter) {
+            Counter counter = (Counter) iSubject;
+            setCount(counter.getCount());
+
+        }
     }
 
 
@@ -35,7 +44,6 @@ public class OvalFrame extends JFrame {
     public void setCount(int cnt) {
         count = cnt;
         repaint();
-
     }
 
     public void paint(Graphics display) {

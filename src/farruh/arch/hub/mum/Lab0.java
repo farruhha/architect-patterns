@@ -33,8 +33,10 @@ public class Lab0 extends JFrame {
         OvalFrame ovalf = new OvalFrame();
         ovalf.setVisible(true);
         ovalf.setBounds(250, 400, 300, 200);
-        counter = new Counter(textf, rectf, ovalf);
-
+        counter = new Counter();
+        counter.attach(textf);
+        counter.attach(rectf);
+        counter.attach(ovalf);
         SymWindow aSymWindow = new SymWindow();
         this.addWindowListener(aSymWindow);
         SymAction aSymAction = new SymAction();
