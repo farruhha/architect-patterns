@@ -1,6 +1,5 @@
-package farruh.arch.hub.mum;
+package farruh.arch.hub.mum.lab3;
 
-import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 

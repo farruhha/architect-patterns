@@ -1,7 +1,6 @@
-package farruh.arch.hub.mum;
+package farruh.arch.hub.mum.lab3;
 
 import javax.swing.*;
-import java.beans.*;
 import java.awt.*;
 
 public class OvalFrame extends JFrame implements Observer {

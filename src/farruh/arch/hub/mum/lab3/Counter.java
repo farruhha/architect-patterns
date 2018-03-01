@@ -1,8 +1,5 @@
-package farruh.arch.hub.mum;
+package farruh.arch.hub.mum.lab3;
 
-import com.sun.org.apache.regexp.internal.RE;
-
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 

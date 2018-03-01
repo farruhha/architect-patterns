@@ -1,4 +1,4 @@
-package farruh.arch.hub.mum;
+package farruh.arch.hub.mum.lab3;
 
 public interface Observer {
 
