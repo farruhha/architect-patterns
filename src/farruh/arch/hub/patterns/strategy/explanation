@@ -1,0 +1,11 @@
+Strategy Pattern
+Strategy pattern belongs to behavior patterns family, it is also known as a algorithmic. It is used to solve the following design problems:
+
+It is used when we have many algorithms for a specific task and the client decides the actual implementation to be used at the runtime
+When there are multiple solutions to the same particular problem, and one must be selected at the runtime.
+For example, a customer goes to chopping mall and purchase a bag of bananas. In order to pay for the product, the customer goes to the counter. The customer has options; payment by either credit card, debit card or cash. To do realization of this payment process, we need to implement the strategy pattern.
+
+Or another example, a person wants to go from home to his office. He can go by many methods, taking a train, driving a car, by walking or by riding a bicycle. To implement those behaviors for a particular task, we use strategy pattern.
+
+For all the examples above, you can find the implementations in my github here.
+
