@@ -1,0 +1,10 @@
+Template Method Design Pattern
+Template design pattern also falls into category of behavior pattern. In many ways, it is very similar to the strategy pattern. In the following intents, the template method is used:
+
+It defines sequential steps of algorithm execution for a particular task. Subclasses are allowed to override the steps but not allowed to change the sequence.
+One of the key points of template method is we define the general logic in abstract parent class, and let the child class define the specifics.
+Lets clarify this with simple example, imagine we would like to make a cake. The general steps to make a cake is to make dough (1), prepare ingredients (2), combine the dough with ingredients (3) and cook them all (4). The important point here is we can't change the order of execution. Without making the dough, we can't cook them.
+
+Lets assume that making a dough for all the cakes are the same, no matter what kind of cakes they are. We can provide the basic implementation for it. If subclass would like to override them, they can but since it is a common for all, it is not needed in most cases.
+
+However, we need to make sure people can't override the template method, in Java we can achieve this by final keyword.
