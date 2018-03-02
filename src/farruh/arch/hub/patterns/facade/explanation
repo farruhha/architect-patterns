@@ -1,0 +1,8 @@
+Implementation Guideline
+
+1.  To implement the simple interface to complex subsystem. Subsystems get more complex as they grow
+
+2. They are also used when there are lots of dependencies between the client and concrete implementation
+of abstraction
+
+3. We want to layer the subsystem. Use the facade to define entry point to each subsystem level.
