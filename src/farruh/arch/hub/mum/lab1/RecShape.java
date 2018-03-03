@@ -1,8 +1,6 @@
-package farruh.arch.hub.mum.lab1.strategy;
+package farruh.arch.hub.mum.lab1;
 
-public class OvalShape implements TwoEndsShape {
-
-
+public class RecShape implements TwoEndsShape {
     @Override
     public void drawShape() {
 

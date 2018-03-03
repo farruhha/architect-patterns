@@ -1,7 +1,5 @@
 package farruh.arch.hub.mum.lab1;
 
-import farruh.arch.hub.mum.lab1.strategy.Tool;
-
 import java.awt.*;
 import java.awt.event.*;
 
@@ -29,9 +27,9 @@ public class ScribbleCanvasListener
 
         switch (drawframe.getCurrentTool()) {
             case 0: // handle mouse pressed for scribble tool
-                canvas.mouseButtonDown = true;
-                canvas.x = p.x;
-                canvas.y = p.y;
+//                canvas.mouseButtonDown = true;
+//                canvas.x = p.x;
+//                canvas.y = p.y;
                 break;
             case 1:  // handle mouse pressed for line tool
                 canvas.mouseButtonDown = true;
@@ -61,11 +59,11 @@ public class ScribbleCanvasListener
                 onscreen.drawOval(xStart, yStart, 1, 1);
                 break;
             case 4:// handle mouse pressed for eraser tool
-                canvas.mouseButtonDown = true;
-                canvas.x = p.x;
-                canvas.y = p.y;
-                offscreen = canvas.getOffScreenGraphics();
-                offscreen.setColor(Color.white);
+//                canvas.mouseButtonDown = true;
+//                canvas.x = p.x;
+//                canvas.y = p.y;
+//                offscreen = canvas.getOffScreenGraphics();
+//                offscreen.setColor(Color.white);
                 break;
         }
     }
@@ -77,7 +75,7 @@ public class ScribbleCanvasListener
 
         switch (drawframe.getCurrentTool()) {
             case 0: // handle mouse released for scribble tool
-                canvas.mouseButtonDown = false;
+               // canvas.mouseButtonDown = false;
                 break;
             case 1:// handle mouse released for line tool
                 canvas.mouseButtonDown = false;
@@ -101,8 +99,8 @@ public class ScribbleCanvasListener
                 canvas.repaint();
                 break;
             case 4:// handle mouse released for eraser tool
-                canvas.mouseButtonDown = false;
-                canvas.setPenColor(canvas.penColor);
+//                canvas.mouseButtonDown = false;
+//                canvas.setPenColor(canvas.penColor);
                 break;
         }
     }
@@ -114,16 +112,16 @@ public class ScribbleCanvasListener
 
         switch (drawframe.getCurrentTool()) {
             case 0: // handle mouse dragged for scribble tool
-                if (canvas.mouseButtonDown) {
-                    canvas.getOffScreenGraphics().drawLine(canvas.x, canvas.y, p.x, p.y);
-                    int xs = Math.min(canvas.x, p.x);
-                    int ys = Math.min(canvas.y, p.y);
-                    int dx = Math.abs(p.x - canvas.x) + 1;
-                    int dy = Math.abs(p.y - canvas.y) + 1;
-                    canvas.repaint(xs, ys, dx, dy);
-                    canvas.x = p.x;
-                    canvas.y = p.y;
-                }
+//                if (canvas.mouseButtonDown) {
+////                    canvas.getOffScreenGraphics().drawLine(canvas.x, canvas.y, p.x, p.y);
+////                    int xs = Math.min(canvas.x, p.x);
+////                    int ys = Math.min(canvas.y, p.y);
+////                    int dx = Math.abs(p.x - canvas.x) + 1;
+////                    int dy = Math.abs(p.y - canvas.y) + 1;
+////                    canvas.repaint(xs, ys, dx, dy);
+////                    canvas.x = p.x;
+////                    canvas.y = p.y;
+//                }
                 break;
             case 1:// handle mouse dragged for line tool
                 if (canvas.mouseButtonDown) {
@@ -150,17 +148,17 @@ public class ScribbleCanvasListener
                 canvas.y = p.y;
                 break;
             case 4:// handle mouse dragged for eraser tool
-                if (canvas.mouseButtonDown) {
-                    int xs, ys, dx, dy;
-                    xs = Math.min(canvas.x, p.x) - 2;
-                    ys = Math.min(canvas.y, p.y) - 2;
-                    dx = Math.abs(p.x - canvas.x) + 6;
-                    dy = Math.abs(p.y - canvas.y) + 6;
-                    offscreen.fillRect(xs, ys, dx, dy);
-                    canvas.repaint(xs, ys, dx, dy);
-                    canvas.x = p.x;
-                    canvas.y = p.y;
-                }
+//                if (canvas.mouseButtonDown) {
+//                    int xs, ys, dx, dy;
+//                    xs = Math.min(canvas.x, p.x) - 2;
+//                    ys = Math.min(canvas.y, p.y) - 2;
+//                    dx = Math.abs(p.x - canvas.x) + 6;
+//                    dy = Math.abs(p.y - canvas.y) + 6;
+//                    offscreen.fillRect(xs, ys, dx, dy);
+//                    canvas.repaint(xs, ys, dx, dy);
+//                    canvas.x = p.x;
+//                    canvas.y = p.y;
+//                }
 
         }
     }

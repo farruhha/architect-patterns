@@ -1,7 +1,5 @@
 package farruh.arch.hub.mum.lab1;
 
-import farruh.arch.hub.mum.lab1.strategy.Tool;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

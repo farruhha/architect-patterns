@@ -1,8 +1,7 @@
-package farruh.arch.hub.mum.lab1.strategy;
+package farruh.arch.hub.mum.lab1;
 
 public interface TwoEndsShape {
 
-    TwoEndsTool twoEndShape = null;
 
     void drawShape();
 

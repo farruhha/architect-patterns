@@ -1,4 +1,4 @@
-package farruh.arch.hub.mum.lab1.strategy;
+package farruh.arch.hub.mum.lab1;
 
 import java.awt.event.MouseEvent;
 
