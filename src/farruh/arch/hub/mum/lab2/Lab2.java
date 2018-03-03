@@ -166,34 +166,22 @@ public class Lab2 extends JFrame {
 
     void JButtonAllBackward_actionPerformed(ActionEvent event) {
 
-        SwimmerIterator<Swimmer> swimmerIterator = slist.reverseIterator();
+        Iterator<Swimmer> swimmerIterator = slist.reverseIterator();
         while (swimmerIterator.hasNext()) {
             Swimmer swimmer = swimmerIterator.next();
             JTextArea1.append(swimmer.getFname() + " " + swimmer.getLname() + " \n");
         }
 
-//        Vector vectorlist = slist.getVector();
-//        for (int x = vectorlist.size() - 1; x > -1; x--) {
-//            Swimmer swimmer = (Swimmer) vectorlist.elementAt(x);
-//            JTextArea2.append(swimmer.getFname() + " " + swimmer.getLname() + " \n");
-//        }
 
     }
 
     void JButtonAllAbove12_actionPerformed(ActionEvent event) {
         Predicate<Swimmer> predicate = swimmer -> swimmer.getAge() > 12;
 
-        SwimmerIterator<Swimmer> swimmerIterator = slist.iterator(predicate);
+        Iterator<Swimmer> swimmerIterator = slist.iterator(predicate);
         while (swimmerIterator.hasNext()) {
             Swimmer swimmer = swimmerIterator.next();
             JTextArea3.append(swimmer.getFname() + " " + swimmer.getLname() + " \n");
         }
-
-//        Vector vectorlist = slist.getVector();
-//        for (int x = 0; x < vectorlist.size(); x++) {
-//            Swimmer swimmer = (Swimmer) vectorlist.elementAt(x);
-//            if (swimmer.getAge() >= 12)
-//                JTextArea3.append(swimmer.getFname() + " " + swimmer.getLname() + " \n");
-//        }
     }
 }

@@ -18,22 +18,22 @@ public class SwimmersList<E> implements MyCustomIterable<E>, SwimmersListInterfa
     }
 
     @Override
-    public SwimmerIterator<E> iterator(Predicate<E> predicate) {
+    public Iterator<E> iterator(Predicate<E> predicate) {
         return new MyCustomImplIterator(slist, predicate);
     }
 
     @Override
-    public SwimmerIterator<E> reverseIterator() {
+    public Iterator<E> reverseIterator() {
         return new ReserveIterator(slist);
     }
 
     @Override
     public Iterator<E> iterator() {
-        return new CustomSimpleInterator(slist);
+        return new CustomSimpleIterator(slist);
     }
 
 
-    private class ReserveIterator implements SwimmerIterator<E> {
+    private class ReserveIterator implements Iterator<E> {
         private Vector<E> item;
         private int position;
 
@@ -58,7 +58,7 @@ public class SwimmersList<E> implements MyCustomIterable<E>, SwimmersListInterfa
         }
     }
 
-    private class MyCustomImplIterator implements SwimmerIterator<E> {
+    private class MyCustomImplIterator implements Iterator<E> {
 
         private Vector<E> item;
         private Predicate<E> predicate;
@@ -90,12 +90,12 @@ public class SwimmersList<E> implements MyCustomIterable<E>, SwimmersListInterfa
         }
     }
 
-    private class CustomSimpleInterator implements Iterator<E> {
+    private class CustomSimpleIterator implements Iterator<E> {
 
         private Vector<E> item;
         private int position;
 
-        public CustomSimpleInterator(Vector<E> item) {
+        public CustomSimpleIterator(Vector<E> item) {
             this.item = item;
         }
 
