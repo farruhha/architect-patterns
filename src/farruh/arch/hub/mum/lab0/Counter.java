@@ -1,4 +1,4 @@
-package farruh.arch.hub.mum.lab3;
+package farruh.arch.hub.mum.lab0;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package farruh.arch.hub.mum.lab3;
+package farruh.arch.hub.mum.lab0;
 
 public interface ISubject {
 
