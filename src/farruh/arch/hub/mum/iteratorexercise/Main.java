@@ -29,7 +29,7 @@ public class Main {
 
         //Sample test for selective external iterator
 
-        Predicate<Integer> predicate = integer -> integer > 0;
+        Predicate<Integer> predicate = integer -> integer > 2;
         Iterator<Integer> integerIterator = integerMyVector.selectiveIterator(predicate);
         MySumFunctor sumFunctor = new MySumFunctor();
         while (integerIterator.hasNext()) {

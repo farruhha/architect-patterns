@@ -1,7 +1,5 @@
 package farruh.arch.hub.mum.iteratorexercise;
 
-import farruh.arch.hub.mum.iteratorEx.AverageFunctor;
-import farruh.arch.hub.mum.iteratorEx.Pred;
 
 import java.util.Iterator;
 import java.util.Vector;
@@ -51,7 +49,7 @@ public class MyVector<T> extends Vector<T> implements MyCustomIterable<T> {
 
         @Override
         public boolean hasNext() {
-            if (position < vector.size()) {
+            while (position < vector.size()) {
                 if (predicate.test(vector.get(position))) {
                     return true;
                 } else {
