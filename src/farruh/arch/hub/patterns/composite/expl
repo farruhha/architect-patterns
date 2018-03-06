@@ -1,0 +1,10 @@
+Composite design patterns falls into one of structural design patterns. Before diving into the composite design patterns, let me clarify a few points here. We can define the composite objects as objects that contain other objects. For example, the company has divisions, and each division contains departments which contain teams, and so on.
+
+Software engineers need the composite pattern since we would like to treat or manipulate the composite objects in the same way we manipulate the primitive objects. For example, let us assume the department as primitive object that can be increased and decreased in number of employees in it. And we would like to do the same pattern operation on division which is a composite object, containing other departments. The main point is we want to do operations on both primitives and composites in the exactly the same way. If we want to distinguish between those two objects, thinking there are two different objects, our code will be too complex, leading to maintenance problem later on.
+
+In the following cases, the composite design pattern is used:
+
+Composite design pattern allows you to have a tree structure and ask each node to perform a task.
+Pattern creates a tree structure of a group of objects.
+Composite pattern is used where we need to treat a group of objects in similar way as a single object. Composite pattern composes the objects in terms of tree structure to represent part-whole hierarchy.
+In regards of a tree structure, the composite pattern treats each node in two ways, composite or leaf. Composite means it can have other objects below it. Leaf means it has no objects below it.
