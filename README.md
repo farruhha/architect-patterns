@@ -10,4 +10,6 @@ It contains a framework design that implements those patterns.
 3. [Strategy Pattern](https://github.com/farruhx/architect-patterns/tree/master/src/farruh/arch/hub/patterns/strategy)
 4. [Template Method Pattern](https://github.com/farruhx/architect-patterns/tree/master/src/farruh/arch/hub/patterns/template)
 5. [Iterator Pattern](https://github.com/farruhx/architect-patterns/tree/master/src/farruh/arch/hub/patterns/iterator)
-6. [Composite Pattern]()
+6. [Composite Pattern](https://github.com/farruhx/architect-patterns/tree/master/src/farruh/arch/hub/patterns/composite)
+7. [Mediator Pattern](https://github.com/farruhx/architect-patterns/tree/master/src/farruh/arch/hub/patterns/mediator)
+8. [Command Pattern](https://github.com/farruhx/architect-patterns/tree/master/src/farruh/arch/hub/patterns/command)
