@@ -30,16 +30,6 @@ public class OperationReceiverImpl implements OperationReceiver {
     }
 
     @Override
-    public void undo() {
-
-    }
-
-    @Override
-    public void redo() {
-
-    }
-
-    @Override
     public void setString(String s) {
         pushString = s;
     }

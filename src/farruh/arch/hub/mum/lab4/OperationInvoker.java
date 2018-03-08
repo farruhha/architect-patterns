@@ -12,4 +12,5 @@ public class OperationInvoker {
     public void execute() {
         this.command.execute();
     }
+
 }

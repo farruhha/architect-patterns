@@ -12,6 +12,7 @@ import java.util.*;
  * ************************************/
 
 public class Lab4 extends JFrame {
+
     VStack stack = new VStack();  // the stack object
     JButton JButtonPush = new JButton();
     JButton JButtonPop = new JButton();

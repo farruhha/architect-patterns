@@ -8,10 +8,6 @@ public interface OperationReceiver {
 
     void pop();
 
-    void undo();
-
-    void redo();
-
     void setString(String s);
 
 }
