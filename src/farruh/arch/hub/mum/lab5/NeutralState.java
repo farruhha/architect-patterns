@@ -22,7 +22,7 @@ public class NeutralState implements GearState {
     @Override
     public int accelarateSpeed(int speed) {
         if (speed == 0) {
-            return this.getGear();
+            return getGear();
         }
         gearState = FirstGearState.getInstance();
         return gearState.accelarateSpeed(speed);
