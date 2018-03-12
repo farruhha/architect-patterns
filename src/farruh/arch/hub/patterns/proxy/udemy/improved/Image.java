@@ -1,8 +1,12 @@
-package farruh.arch.hub.patterns.proxy.udemy;
+package farruh.arch.hub.patterns.proxy.udemy.improved;
 
 public class Image {
 
     protected String url;
+
+    public Image(){
+
+    }
 
     public Image(String url) {
         this.url = url;

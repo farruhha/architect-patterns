@@ -1,4 +1,4 @@
-package farruh.arch.hub.patterns.proxy.udemy;
+package farruh.arch.hub.patterns.proxy.udemy.improved;
 
 public class Client {
 
