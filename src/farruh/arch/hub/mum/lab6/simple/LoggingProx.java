@@ -1,4 +1,4 @@
-package farruh.arch.hub.mum.test;
+package farruh.arch.hub.mum.lab6.simple;
 
 public class LoggingProx implements Thing {
 
@@ -10,7 +10,8 @@ public class LoggingProx implements Thing {
 
     @Override
     public void compute(String msg) {
-        System.out.println("Logging all the process the message" + item.getClass());
+        System.out.println("Logging before proxy");
         item.compute(msg);
+        System.out.println("Logging after proxy");
     }
 }

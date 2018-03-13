@@ -1,4 +1,4 @@
-package farruh.arch.hub.mum.test;
+package farruh.arch.hub.mum.lab6.functor;
 
 public interface Thing {
 

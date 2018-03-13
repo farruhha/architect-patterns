@@ -1,10 +1,10 @@
-package farruh.arch.hub.mum.test;
+package farruh.arch.hub.mum.lab6.simple;
 
-public class BThing implements Thing {
+public class BThing extends Thing {
 
     private String name;
 
-    public BThing(String name){
+    public BThing(String name) {
         this.name = name;
     }
 

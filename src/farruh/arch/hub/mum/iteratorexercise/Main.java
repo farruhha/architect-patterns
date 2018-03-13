@@ -13,21 +13,21 @@ public class Main {
         integerMyVector.add(3);
         integerMyVector.add(4);
 
-        //Sample test for summation for internal and complete
+        //Sample lab6 for summation for internal and complete
 
         MySumFunctor functor = new MySumFunctor();
         integerMyVector.doAll(functor);
         System.out.println("Value for summation for internal and complete");
         System.out.println(functor.getValue());
 
-        //Sample test for average summation for internal and complete
+        //Sample lab6 for average summation for internal and complete
 
         MyAverageFunctor myAverageFunctor = new MyAverageFunctor();
         integerMyVector.doAll(myAverageFunctor);
         System.out.println("Value for average for internal and complete");
         System.out.println(myAverageFunctor.getValue());
 
-        //Sample test for selective external iterator
+        //Sample lab6 for selective external iterator
 
         Predicate<Integer> predicate = integer -> integer > 2;
         Iterator<Integer> integerIterator = integerMyVector.selectiveIterator(predicate);

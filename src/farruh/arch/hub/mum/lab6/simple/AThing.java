@@ -1,6 +1,6 @@
-package farruh.arch.hub.mum.test;
+package farruh.arch.hub.mum.lab6.simple;
 
-public class AThing implements Thing {
+public class AThing extends Thing {
 
     private String name;
 
@@ -10,6 +10,6 @@ public class AThing implements Thing {
 
     @Override
     public void compute(String msg) {
-        System.out.println(msg + " " + name);
+        System.out.println(msg + " inside the proxy" + name);
     }
 }
