@@ -1,0 +1,9 @@
+Abstract factory is also one of the creational design patterns, and very similar to factory method except for that it is like factory of factories. If you remember from the factory method, we have single factory which returns subclasses object based on client input and the factory uses if else to achieve this.
+
+In abstract factory, we get rid of if else statements and use the factory class instead of sub classes. Then the abstract factory will return sub classes based on input factory classes. To make it much clearer, please open the example code in the github and see it here.
+
+We can see the following advantages of abstract factory method:
+
+Abstract Factory design pattern provides approach to code for interface rather than implementation.
+Abstract Factory pattern is “factory of factories” and can be easily extended to accommodate more products, for example we can add another sub-class Laptop and a factory LaptopFactory.
+Abstract Factory pattern is robust and avoid conditional logic of Factory pattern.

@@ -1,6 +1,6 @@
 package farruh.arch.hub.mum.lab6.simple;
 
-public class LoggingProx implements Thing {
+public class LoggingProx extends Thing {
 
     private Thing item;
 
