@@ -32,3 +32,7 @@ It contains a framework design that implements those patterns.
 17. [Iterator Pattern](https://github.com/farruhx/architect-patterns/tree/master/src/farruh/arch/hub/patterns/iterator) 
 18. [Mediator Pattern](https://github.com/farruhx/architect-patterns/tree/master/src/farruh/arch/hub/patterns/mediator)
 19. [Command Pattern](https://github.com/farruhx/architect-patterns/tree/master/src/farruh/arch/hub/patterns/command)
+20. [Visitor Pattern]()
+21. [Chain of Responsibility]()
+22. [Memento Pattern]()
+23. [State Pattern]()
